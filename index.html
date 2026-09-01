@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Sasandi! 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@200;300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>">
+</head>
+<body>
+    <div id="particles"></div>
+    <div id="fireworks"></div>
+    <div id="confetti-container"></div>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+    </div>
+
+    <div class="glow-ring glow-ring-1"></div>
+    <div class="glow-ring glow-ring-2"></div>
+    <div class="glow-ring glow-ring-3"></div>
+
+    <main class="container">
+        <section class="hero-section">
+            <div class="photo-container">
+                <div class="photo-ring"></div>
+                <div class="photo-ring photo-ring-2"></div>
+                <div class="photo-frame">
+                    <img src="sasandi.jpg" alt="Sasandi" id="photo" 
+                         onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';">
+                    <div id="photoPlaceholder" class="photo-placeholder" style="display:none;">
+                        <span class="placeholder-icon">👩</span>
+                        <span class="placeholder-text">Sasandi</span>
+                    </div>
+                </div>
+                <div class="sparkle s1">✦</div>
+                <div class="sparkle s2">✧</div>
+                <div class="sparkle s3">✦</div>
+                <div class="sparkle s4">✧</div>
+                <div class="sparkle s5">✦</div>
+                <div class="sparkle s6">✧</div>
+            </div>
+        </section>
+
+        <section class="wish-section">
+            <p class="pre-title">✨ With love from ✨</p>
+            <h1 class="sender">Hiruni</h1>
+            
+            <div class="wish-divider">
+                <span class="divider-star">★</span>
+                <span class="divider-line"></span>
+                <span class="divider-star">★</span>
+            </div>
+
+            <p class="wish-for">Wishing a very</p>
+            
+            <div class="title-container">
+                <span class="title-word tw1">Happy</span>
+                <span class="title-word tw2">Birthday</span>
+            </div>
+            
+            <h2 class="recipient">Sasandi!</h2>
+        </section>
+
+        <section class="cake-section">
+            <div class="cake-wrapper">
+                <div class="cake-glow"></div>
+                <div class="candles-container">
+                    <div class="candle c1"><div class="flame"><div class="flame-inner"></div></div><div class="smoke"></div></div>
+                    <div class="candle c2"><div class="flame"><div class="flame-inner"></div></div><div class="smoke"></div></div>
+                    <div class="candle c3"><div class="flame"><div class="flame-inner"></div></div><div class="smoke"></div></div>
+                    <div class="candle c4"><div class="flame"><div class="flame-inner"></div></div><div class="smoke"></div></div>
+                    <div class="candle c5"><div class="flame"><div class="flame-inner"></div></div><div class="smoke"></div></div>
+                </div>
+                <div class="cake-body">
+                    <div class="cake-top"></div>
+                    <div class="cake-drip"></div>
+                    <div class="cake-mid"></div>
+                    <div class="cake-bottom"></div>
+                    <div class="cake-plate"></div>
+                </div>
+                <p class="cake-hint">🎂 Click the cake!</p>
+            </div>
+        </section>
+
+        <section class="messages-section">
+            <div class="message-card mc1">
+                <div class="msg-icon">💖</div>
+                <p>Wishing you a day filled with happiness</p>
+            </div>
+            <div class="message-card mc2">
+                <div class="msg-icon">🌟</div>
+                <p>and a year filled with wonderful moments</p>
+            </div>
+            <div class="message-card mc3">
+                <div class="msg-icon">🦋</div>
+                <p>May all your dreams and wishes come true</p>
+            </div>
+            <div class="message-card mc4">
+                <div class="msg-icon">🌸</div>
+                <p>You deserve all the beautiful things life has to offer</p>
+            </div>
+            <div class="message-card mc5">
+                <div class="msg-icon">✨</div>
+                <p class="special-msg">Happy Birthday to the most amazing person!</p>
+            </div>
+        </section>
+
+        <section class="hearts-section">
+            <div class="floating-hearts">
+                <div class="heart">❤</div>
+                <div class="heart">🧡</div>
+                <div class="heart">💛</div>
+                <div class="heart">💚</div>
+                <div class="heart">💙</div>
+                <div class="heart">💜</div>
+                <div class="heart">🩷</div>
+                <div class="heart">🩵</div>
+            </div>
+        </section>
+
+        <section class="actions-section">
+            <button class="btn-celebrate" id="celebrateBtn">
+                <span class="btn-icon">🎉</span>
+                <span class="btn-text">Celebrate!</span>
+                <span class="btn-ripple"></span>
+            </button>
+            
+            <button class="btn-firework" id="fireworkBtn">
+                <span class="btn-icon">🎆</span>
+                <span class="btn-text">Fireworks!</span>
+            </button>
+            
+            <div class="music-player">
+                <button class="btn-music" id="musicBtn">
+                    <div class="music-bars">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <span class="btn-text">Play Music</span>
+                </button>
+                <div class="music-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing-section">
+            <div class="closing-card">
+                <div class="closing-stars">✦ ✦ ✦</div>
+                <p class="closing-text">From the bottom of my heart,</p>
+                <p class="closing-text">I wish you nothing but the best!</p>
+                <div class="signature">
+                    <p class="with-love">With all my love,</p>
+                    <h3 class="signature-name">Hiruni</h3>
+                    <div class="signature-heart">💕</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Made with ❤️ for Sasandi's Special Day</p>
+                <p class="footer-date">🎉 Happy Birthday 🎉</p>
+            </div>
+        </footer>
+    </main>
+
+    <audio id="birthdayMusic" loop preload="auto">
+        <source src="https://cdn.pixabay.com/audio/2022/01/18/audio_d0ef98b5d3.mp3" type="audio/mpeg">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
